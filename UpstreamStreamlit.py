@@ -283,7 +283,7 @@ def main():
     st.sidebar.header("⚙️ Configuration")
 
     # Processing options
-    max_stories = st.sidebar.slider("Max stories to analyze", 10, 200, 50,
+    max_stories = st.sidebar.slider("Max stories to analyze", 10, 200, 200,
                                     help="Number of stories to process from RSS feed")
 
     # RSS feed URL
@@ -353,7 +353,7 @@ def main():
                 relevance_filter = st.sidebar.multiselect(
                     "Select Relevance Levels",
                     options=['High', 'Moderate', 'Relevant', 'Low'],
-                    default=['High', 'Moderate', 'Relevant']
+                    default=['High', 'Moderate', 'Relevant', 'Low']
                 )
 
                 # Apply filters
